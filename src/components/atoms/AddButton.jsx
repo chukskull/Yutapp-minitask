@@ -3,6 +3,15 @@ import { Button, Box } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 
 const AddButton = () => {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <Button sx={{ display: "flex", alignItems: "center" }}>
       <Box
