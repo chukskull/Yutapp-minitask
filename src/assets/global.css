@@ -1,0 +1,47 @@
+/*
+  Global styles
+*/
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  background-color: #f7f7fc;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+/*
+  Custom styles
+*/
+
+body {
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 1em 0;
+}
+
+p {
+  line-height: 1.5;
+  margin: 0.5em 0;
+}
