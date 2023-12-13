@@ -23,9 +23,13 @@ a {
   box-sizing: inherit;
 }
 
-/*
-  Custom styles
-*/
+.red-select-border {
+
+  
+  .MuiSelect-outlinedInput {
+    border-color: red !important;
+  }
+}
 
 body {
   color: #333;

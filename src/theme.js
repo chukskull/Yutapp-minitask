@@ -10,11 +10,17 @@ const theme = createTheme({
       main: grey[800], // Medium gray
     },
     error: {
-      main: red.A400, 
+      main: red.A400,
     },
     text: {
-      primary: '#000000', // Black for primary text
+      primary: "#000000", // Black for primary text
       secondary: grey[600], // Dark gray for secondary text
+    },
+    buttonColor: {
+      primary: "#04b3ff",
+      secondary: "#e5f7ff",
+      third: "#c8eeff",
+      fourth: "#49c8ff",
     },
   },
 });

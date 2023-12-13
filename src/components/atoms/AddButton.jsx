@@ -1,19 +1,23 @@
 import React from "react";
 import { Button, Box } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
+import theme from "../../theme";
+import { useDispatch } from "react-redux";
+import { openDial } from "../../state/Close/closeSlice";
+import { actionModal, testModal } from "../../state/ModalType/modaltype";
 
-const AddButton = () => {
-  const [open, setOpen] = React.useState(false);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-  const handleClose = () => {
-    setOpen(false);
-  };
+const AddButton = ({ type }) => {
+  const dispatch = useDispatch();
 
   return (
-    <Button sx={{ display: "flex", alignItems: "center" }}>
+    <Button
+      sx={{ display: "flex", alignItems: "center" }}
+      onClick={
+        type === "action"
+          ? () => dispatch(actionModal()) && dispatch(openDial())
+          : () => dispatch(testModal()) && dispatch(openDial())
+      }
+    >
       <Box
         sx={{
           display: "flex",
@@ -30,10 +34,12 @@ const AddButton = () => {
           justifyContent: "center",
           borderRadius: 10,
 
-          backgroundColor: "#e5f7ff",
+          backgroundColor: theme.palette.buttonColor.secondary,
         }}
       >
-        <AddIcon sx={{ fontSize: 24, color: "#04b3ff" }} />
+        <AddIcon
+          sx={{ fontSize: 24, color: theme.palette.buttonColor.primary }}
+        />
       </Box>
     </Button>
   );

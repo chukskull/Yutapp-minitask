@@ -28,7 +28,7 @@ const HeadTable = ({ icon, text }) => {
         {text}
       </Typography>
 
-      <AddButton />
+      <AddButton type={text === "Add Action" ? "action" : "test"} />
     </Container>
   );
 };

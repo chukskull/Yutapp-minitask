@@ -29,6 +29,7 @@ const BiggerItem = styled(Paper)(({ theme }) => ({
 
 const actionIcons = <UpcomingOutlinedIcon sx={{ fontSize: 20 }} />;
 const githubIcon = <GitHubIcon sx={{ fontSize: 20 }} />;
+
 export default function MiniTable() {
   return (
     <Box sx={{ width: "100%", m: 4 }}>
