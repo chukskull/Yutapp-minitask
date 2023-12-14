@@ -26,7 +26,7 @@ const MyIcon = styled(ArrowForwardOutlinedIcon)(({ theme }) => ({
 }));
 
 export default function Modal() {
-  const sure = useSelector((state) => state.close.value);
+  const close = useSelector((state) => state.close.value);
   const type = useSelector((state) => state.modalType);
 
   const dispatch = useDispatch();
@@ -36,7 +36,7 @@ export default function Modal() {
       <BootstrapDialog
         onClose={() => dispatch(closeDial())}
         aria-labelledby="customized-dialog-title"
-        open={sure}
+        open={close}
         maxWidth="md"
       >
         <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
