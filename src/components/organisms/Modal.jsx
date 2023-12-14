@@ -9,10 +9,10 @@ import CloseIcon from "@mui/icons-material/Close";
 import Typography from "@mui/material/Typography";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
-import theme from "../../theme";
+import theme from "@/theme";
 import { Box, FormControl, MenuItem, Paper, Select } from "@mui/material";
 import { useSelector, useDispatch } from "react-redux";
-import { closeDial } from "../../state/Close/closeSlice";
+import { closeDial } from "@/state/Close/closeSlice";
 
 const BootstrapDialog = styled(Dialog)(() => ({
   "& .MuiDialogContent-root": {

@@ -2,8 +2,8 @@ import { Box, Grid, Paper, Typography, styled } from "@mui/material";
 import React from "react";
 import MoreHorizOutlinedIcon from "@mui/icons-material/MoreHorizOutlined";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import ArrowRectangle from "../atoms/ArrowRectangle";
-import theme from "../../theme";
+import ArrowRectangle from "@/components/atoms/ArrowRectangle";
+import theme from "@/theme";
 
 import UpcomingOutlinedIcon from "@mui/icons-material/UpcomingOutlined";
 

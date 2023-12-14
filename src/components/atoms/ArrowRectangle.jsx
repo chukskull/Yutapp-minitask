@@ -1,7 +1,7 @@
 import React from "react";
 import { styled } from "@mui/material/styles";
 import { Box, Typography } from "@mui/material";
-import theme from "../../theme";
+import theme from "@/theme";
 
 const StyledRectangle = styled(Box)(({ theme }) => ({
   border: "2px solid #ddd",

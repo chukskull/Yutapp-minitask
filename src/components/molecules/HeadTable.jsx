@@ -1,7 +1,7 @@
 import { Container, Typography } from "@mui/material";
-import theme from "../../theme";
+import theme from "@/theme";
 
-import AddButton from "../atoms/AddButton";
+import AddButton from "@/components/atoms/AddButton";
 import React from "react";
 
 const HeadTable = ({ icon, text }) => {
@@ -13,7 +13,7 @@ const HeadTable = ({ icon, text }) => {
         p: 0,
         m: 0,
         alignItems: "center",
-        gap: "0.5rem",
+        gap: "0.75rem",
       }}
     >
       {icon}

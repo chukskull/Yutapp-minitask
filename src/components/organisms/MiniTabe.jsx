@@ -2,10 +2,10 @@ import { styled } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
-import HeadTable from "../molecules/HeadTable";
+import HeadTable from "@/components/molecules/HeadTable";
 import UpcomingOutlinedIcon from "@mui/icons-material/UpcomingOutlined";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import FlowTable from "../molecules/FlowTable";
+import FlowTable from "@/components/molecules/FlowTable";
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,

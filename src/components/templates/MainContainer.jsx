@@ -1,7 +1,7 @@
 import { Container, Typography } from "@mui/material";
 import React from "react";
-import Copyright from "../atoms/CopyRight";
-import MiniTable from "../organisms/MiniTabe";
+import Copyright from "@/components/atoms/CopyRight";
+import MiniTable from "@/components/organisms/MiniTabe";
 
 export const MainContiner = () => {
   return (
